@@ -15,7 +15,6 @@ executing==2.0.1
 fonttools==4.53.0
 idna==3.7
 ipykernel==6.29.4
-ipython==8.25.0
 isodate==0.6.1
 jedi==0.19.1
 jupyter_client==8.6.2
@@ -55,3 +54,4 @@ typing_extensions==4.12.2
 tzdata==2024.1
 urllib3==2.2.2
 wcwidth==0.2.13
+scikit-learn

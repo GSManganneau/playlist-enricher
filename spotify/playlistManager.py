@@ -1,5 +1,5 @@
 from spotipy import Spotify
-from sessionManager import create_spotify_session
+from spotify.sessionManager import create_spotify_session
 
 
 def read_playlist(session: Spotify, playlist_id: str) -> dict:
@@ -13,7 +13,7 @@ def get_playlist_names(session: Spotify) -> list:
     return [playlist['name'] for playlist in playlists]
 
 def get_playlist_id(playlist_name: str) -> str:
-    from playlist_mapping import PLAYLIST_MAP
+    from spotify.playlist_mapping import PLAYLIST_MAP
     return PLAYLIST_MAP[playlist_name]
 
 def get_tracks_from_playlist(session: Spotify, playlist_id: str) -> list:

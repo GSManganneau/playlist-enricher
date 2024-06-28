@@ -72,8 +72,10 @@ for playlist in playlists:
                 "djayPro_key": playlist
             })
             
-with open('key_analysis.json', 'w') as f:
-    f.write(str(result))
+with open('key_analysis_model_result_training_set__.json', 'w') as f:
+    import json
+    f.write(json.dumps(result))
+
     
     
         #print(f"Track {track_name} has key {track_key} and mode {track_mode} which corresponds to Camelot key {camelot_key}")
